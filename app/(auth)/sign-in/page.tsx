@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { authClient } from "@/lib/auth-client";
 
 const SignIn = () => {
   const currentYear = new Date().getFullYear();
@@ -74,7 +75,11 @@ const SignIn = () => {
           </p>
 
           <button
-            
+            onClick={async () => {
+              return await authClient.signIn.social({
+                provider: "google",
+              });
+            }}
           >
             <Image
               src="/assets/icons/google.svg"
