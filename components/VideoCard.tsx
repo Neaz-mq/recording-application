@@ -47,6 +47,9 @@ const VideoCard = ({id, title, thumbnail, createdAt}: VideoCardProps) => {
         <button  className="copy-btn">
        
       </button>
+      
+        <div className="duration">{Math.ceil(522 / 60)}min</div>
+   
         </Link>
   )
 }
