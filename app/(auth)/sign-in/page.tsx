@@ -3,16 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 
-
-
 const SignIn = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <main className="sign-in">
       <aside className="testimonial">
-        <Link href="/">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/assets/icons/logo.svg"
-            alt="SnapChat Logo"
+            alt="Nexora Logo"
             width={32}
             height={32}
           />
@@ -21,7 +21,7 @@ const SignIn = () => {
 
         <div className="description">
           <section>
-            <figure>
+            <figure className="flex gap-1">
               {Array.from({ length: 5 }).map((_, index) => (
                 <Image
                   src="/assets/icons/star.svg"
@@ -33,16 +33,17 @@ const SignIn = () => {
               ))}
             </figure>
             <p>
-            Nexora makes screen recording easy. From quick walkthroughs to
-              full presentations, it&apos;s fast, smooth, and shareable in seconds
+              Nexora makes screen recording easy. From quick walkthroughs to
+              full presentations, it&apos;s fast, smooth, and shareable in
+              seconds
             </p>
-            <article>
+            <article className="flex items-center gap-3 mt-4">
               <Image
                 src="/assets/images/neaz.png"
-                 width={64}
-            height={64}
+                width={64}
+                height={64}
                 alt="Neaz"
-               
+                className="rounded-full"
               />
               <div>
                 <h2>Neaz Morshed</h2>
@@ -51,14 +52,17 @@ const SignIn = () => {
             </article>
           </section>
         </div>
-        <p>© Nexora 2025</p>
+
+        {/* Dynamic Year */}
+        <p>© Nexora {currentYear}</p>
       </aside>
+
       <aside className="google-sign-in">
         <section>
-          <Link href="/">
+          <Link href="/" className="flex items-center gap-2">
             <Image
               src="/assets/icons/logo.svg"
-              alt="SnapChat Logo"
+              alt="Nexora Logo"
               width={40}
               height={40}
             />
@@ -70,7 +74,7 @@ const SignIn = () => {
           </p>
 
           <button
-           
+            
           >
             <Image
               src="/assets/icons/google.svg"
@@ -82,6 +86,7 @@ const SignIn = () => {
           </button>
         </section>
       </aside>
+
       <div className="overlay" />
     </main>
   );
