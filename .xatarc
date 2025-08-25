@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Md-Neaz-Morshed-s-workspace-e4s07v.eu-central-1.xata.sh/db/neaz_nexora",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
