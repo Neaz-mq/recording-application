@@ -10,7 +10,7 @@ const page = () => {
               id= "1"
               title="hello"
               thumbnail="/assets/images/video1.png"
-              createdAt="10"
+              createdAt= '30'
              
       
       />
