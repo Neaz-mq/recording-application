@@ -10,6 +10,7 @@ import {apiFetch, doesTitleMatch, getEnv, getOrderByClause, withErrorHandling} f
 import { BUNNY } from "@/constants";
 import aj, { fixedWindow, request } from "../arcjet";
 
+
 // Constants with full names
 const VIDEO_STREAM_BASE_URL = BUNNY.STREAM_BASE_URL;
 const THUMBNAIL_STORAGE_BASE_URL = BUNNY.STORAGE_BASE_URL;
