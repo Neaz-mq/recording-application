@@ -59,6 +59,11 @@ const VideoDetailHeader = ({
   const copyLink = () => {
     navigator.clipboard.writeText(`${window.location.origin}/video/${videoId}`);
     setCopied(true);
+
+    // Reset copied back to false after 4 seconds
+    setTimeout(() => {
+      setCopied(false);
+    }, 4000);
   };
 
   const TriggerVisibility = (
