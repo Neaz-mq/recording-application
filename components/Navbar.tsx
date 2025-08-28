@@ -21,7 +21,7 @@ const Navbar = () => {
             width={32}
             height={32}
           />
-          <h1>SnapCast</h1>
+          <h1>Nexora</h1>
         </Link>
 
         {user && (

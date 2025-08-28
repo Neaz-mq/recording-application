@@ -1,11 +1,13 @@
 "use client";
 
-import { cn, createIframeLink } from "@/lib/utils";
+
 import { useEffect, useRef, useState } from "react";
 import {
   incrementVideoViews,
   getVideoProcessingStatus,
 } from "@/lib/actions/video";
+
+import { cn, createIframeLink } from "@/lib/utils";
 import { initialVideoState } from "@/constants";
 
 const VideoPlayer = ({ videoId, className }: VideoPlayerProps) => {
