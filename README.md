@@ -94,7 +94,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/screen_recording_sharing_app.git
+git clone https://github.com/Neaz-mq/recording-application.git
 cd screen_recording_sharing_app
 ```
 
